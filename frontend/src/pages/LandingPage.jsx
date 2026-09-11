@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import GlobalTradeGlobe from '../components/GlobalTradeGlobe';
-import LaptopShowcase from '../components/LaptopShowcase';
 
 /**
  * LandingPage.jsx — Cinematic Aerospace & Global Logistics Portal
@@ -218,10 +217,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ─── 3. INTERACTIVE LAPTOP SHOWCASE (VIDEO DEMO) ────────────────── */}
-      <LaptopShowcase />
-
-      {/* ─── 4. BIFURCATED WORKFLOW ARCHITECTURE ──────────────────────────── */}
+      {/* ─── 3. BIFURCATED WORKFLOW ARCHITECTURE ──────────────────────────── */}
       <section className="section-architecture" id="architecture">
         <div className="section-header-hud">
           <div className="hud-badge">SYSTEM ARCHITECTURE</div>

@@ -79,9 +79,6 @@ export default function Navbar() {
               <a href="/#radar" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
                 LIVE RADAR
               </a>
-              <a href="/#demo" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
-                PLATFORM DEMO
-              </a>
               <a href="/#architecture" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
                 HOW IT WORKS
               </a>
