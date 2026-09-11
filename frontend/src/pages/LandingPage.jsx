@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import GlobalTradeGlobe from '../components/GlobalTradeGlobe';
+import LaptopShowcase from '../components/LaptopShowcase';
 
 /**
  * LandingPage.jsx — Cinematic Aerospace & Global Logistics Portal
@@ -152,7 +153,7 @@ export default function LandingPage() {
       </section>
 
       {/* ─── 2. LIVE RFQ RADAR SHOWCASE ──────────────────────────────────── */}
-      <section className="section-radar">
+      <section className="section-radar" id="radar">
         <div className="section-header-hud">
           <div className="hud-badge">
             <span className="hud-pulse" />
@@ -217,8 +218,11 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ─── 3. BIFURCATED WORKFLOW ARCHITECTURE ──────────────────────────── */}
-      <section className="section-architecture">
+      {/* ─── 3. INTERACTIVE LAPTOP SHOWCASE (VIDEO DEMO) ────────────────── */}
+      <LaptopShowcase />
+
+      {/* ─── 4. BIFURCATED WORKFLOW ARCHITECTURE ──────────────────────────── */}
+      <section className="section-architecture" id="architecture">
         <div className="section-header-hud">
           <div className="hud-badge">SYSTEM ARCHITECTURE</div>
           <h2 className="section-title">INTELLIGENT TRADE FLOW</h2>
@@ -319,8 +323,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ─── 4. ENTERPRISE SECURITY & SLA GRID ───────────────────────────── */}
-      <section className="section-security">
+      {/* ─── 5. ENTERPRISE SECURITY & SLA GRID ───────────────────────────── */}
+      <section className="section-security" id="security">
         <div className="security-hud-card">
           <div className="security-grid">
             <div className="security-item">

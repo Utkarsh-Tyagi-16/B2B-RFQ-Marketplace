@@ -73,12 +73,21 @@ export default function Navbar() {
             </>
           ) : (
             <>
-              <Link to="/" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
+              <a href="/#hero" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
                 OVERVIEW
-              </Link>
-              <Link to="/browse" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
-                MARKETPLACE
-              </Link>
+              </a>
+              <a href="/#radar" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
+                LIVE RADAR
+              </a>
+              <a href="/#demo" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
+                PLATFORM DEMO
+              </a>
+              <a href="/#architecture" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
+                HOW IT WORKS
+              </a>
+              <a href="/#security" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
+                SECURITY
+              </a>
             </>
           )}
         </nav>
