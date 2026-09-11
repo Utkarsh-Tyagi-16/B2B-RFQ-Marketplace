@@ -79,12 +79,6 @@ export default function Navbar() {
               <Link to="/browse" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
                 MARKETPLACE
               </Link>
-              <Link to="/signup?role=buyer" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
-                BUYER SOLUTIONS
-              </Link>
-              <Link to="/signup?role=supplier" className="nav-link-item" onClick={() => setMobileMenuOpen(false)}>
-                SUPPLIER NETWORK
-              </Link>
             </>
           )}
         </nav>
@@ -123,9 +117,8 @@ export default function Navbar() {
               <Link to="/login" className="nav-link-signin">
                 SIGN IN
               </Link>
-              {/* Reference Image Style: Crisp White Capsule Pill Button */}
               <Link to="/signup" className="btn-capsule-nav">
-                WORK WITH US
+                SIGN UP
               </Link>
             </div>
           )}
