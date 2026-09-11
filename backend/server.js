@@ -30,9 +30,18 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // CORS — allow requests from the React frontend
+const clientUrl = process.env.CLIENT_URL ? process.env.CLIENT_URL.replace(/\/$/, '') : null;
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: (origin, callback) => {
+      // Allow server-to-server, curl, health-checks or local dev
+      if (!origin) return callback(null, true);
+      if (!clientUrl || clientUrl === '*' || origin === clientUrl || origin === 'http://localhost:5173') {
+        return callback(null, true);
+      }
+      // Fallback: reflect origin to prevent CORS blocking during deployment transitions
+      return callback(null, true);
+    },
     credentials: true,
   })
 );
