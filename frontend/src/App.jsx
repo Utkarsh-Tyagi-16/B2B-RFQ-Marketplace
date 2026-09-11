@@ -19,6 +19,7 @@ import RFQQuotationsPage from './pages/RFQQuotationsPage';
 import BrowseRFQsPage from './pages/BrowseRFQsPage';
 import RFQDetailPage from './pages/RFQDetailPage';
 import MyQuotationsPage from './pages/MyQuotationsPage';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
@@ -29,11 +30,9 @@ function App() {
           <main className="app-main">
             <Routes>
               {/* Public routes */}
+              <Route path="/" element={<LandingPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/signup" element={<SignupPage />} />
-
-              {/* Default redirect */}
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
               {/* Protected: any authenticated user */}
               <Route
